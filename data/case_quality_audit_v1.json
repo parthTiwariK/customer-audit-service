@@ -1,0 +1,241 @@
+{
+  "template": {
+    "name": "Case Quality Audit",
+    "slug": "case-quality-audit",
+    "description": "Komprise Support case quality checklist (v4.2 seed)."
+  },
+  "version_number": 1,
+  "sections": [
+    {
+      "title": "Intake and case hygiene",
+      "sort_order": 0,
+      "questions": [
+        {
+          "question_key": "Q1_1",
+          "number_label": "1.1",
+          "title": "Correct priority assigned",
+          "criteria": "Confirm the case priority (P1 to P4) matches the issue reported.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q1_2",
+          "number_label": "1.2",
+          "title": "Evidence collected before fixing",
+          "criteria": "Confirm logs, repro steps, or screenshots were collected before a fix was suggested.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        }
+      ]
+    },
+    {
+      "title": "Case lifecycle and work log",
+      "sort_order": 1,
+      "questions": [
+        {
+          "question_key": "Q2_1",
+          "number_label": "2.1",
+          "title": "Case status kept accurate",
+          "criteria": "Verify the case status always matched what was actually happening.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q2_2",
+          "number_label": "2.2",
+          "title": "Work log handover-ready",
+          "criteria": "Adherence to the handover process.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        }
+      ]
+    },
+    {
+      "title": "Customer communication",
+      "sort_order": 2,
+      "questions": [
+        {
+          "question_key": "Q3_1",
+          "number_label": "3.1",
+          "title": "First response on time",
+          "criteria": "Confirm the first response was sent within the expected time for this case (SLA).",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q3_2",
+          "number_label": "3.2",
+          "title": "Regular updates given",
+          "criteria": "Verify the customer received regular updates on progress, next steps, and timing.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q3_3",
+          "number_label": "3.3",
+          "title": "Clear, professional language",
+          "criteria": "Confirm communication was clear and professional, without unexplained technical terms.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q3_4",
+          "number_label": "3.4",
+          "title": "Customer informed before changes",
+          "criteria": "Verify the customer was told, and agreed, before any backend change or data operation.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        }
+      ]
+    },
+    {
+      "title": "Escalation and process compliance",
+      "sort_order": 3,
+      "questions": [
+        {
+          "question_key": "Q4_1",
+          "number_label": "4.1",
+          "title": "Escalated promptly",
+          "criteria": "Confirm the case was escalated to Engineering in line with the case lifecycle framework.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q4_2",
+          "number_label": "4.2",
+          "title": "Escalation package complete",
+          "criteria": "Verify the escalation included customer details, logs, a summary, and business impact.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q4_3",
+          "number_label": "4.3",
+          "title": "JIRA raised and updated",
+          "criteria": "Confirm a JIRA was raised with the right detail and kept updated regularly.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        }
+      ]
+    },
+    {
+      "title": "Resolution and closure",
+      "sort_order": 4,
+      "questions": [
+        {
+          "question_key": "Q5_1",
+          "number_label": "5.1",
+          "title": "Resolution summary",
+          "criteria": "Confirm whether the resolution summary was sent to the customer.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q5_2",
+          "number_label": "5.2",
+          "title": "Customer confirmed resolution for HFs",
+          "criteria": "Customer confirmation is mandatory for Hot Fixes; select N/A for standard issues.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        }
+      ]
+    },
+    {
+      "title": "Critical check",
+      "sort_order": 5,
+      "questions": [
+        {
+          "question_key": "Q6_1",
+          "number_label": "6.1",
+          "title": "No premature closure",
+          "criteria": "Verify the case wasn't closed early or against the customer's wishes.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        },
+        {
+          "question_key": "Q6_2",
+          "number_label": "6.2",
+          "title": "No false information given",
+          "criteria": "Confirm nothing misleading or unverified was told to the customer.",
+          "response_type": "yes_no_na",
+          "options": [
+            {"label": "Yes", "value": "Yes", "score": 5},
+            {"label": "No", "value": "No", "score": 0},
+            {"label": "N/A", "value": "N/A", "score": 5}
+          ],
+          "comment_required_when": {"equals": "No"}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+services:
+  migrate:
+    build: .
+    env_file:
+      - .env
+    environment:
+      RUN_MIGRATIONS: "1"
+    entrypoint: ["/bin/sh", "-c", "cd /app/backend && python -m alembic upgrade head"]
+    profiles:
+      - migrate
+
+  api:
+    build: .
+    ports:
+      - "8002:8000"
+    env_file:
+      - .env
+    environment:
+      RUN_MIGRATIONS: "0"
+      CASE_AUDIT_BIND: "0.0.0.0:8000"
+      CASE_AUDIT_WORKERS: "2"
