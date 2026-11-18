@@ -1,4 +1,18 @@
-.venv/
-.idea/
 frontend/node_modules/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment files
 .env
+.env.*
+
+# IDE
+.idea/
+.vscode/
